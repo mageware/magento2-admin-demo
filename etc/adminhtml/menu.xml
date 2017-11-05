@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageWare_AdminDemo::admindemo" title="Admin Demo" translate="title" module="MageWare_AdminDemo" sortOrder="999" parent="MageWare_Common::mageware" resource="MageWare_AdminDemo::config" />
+        <add id="MageWare_AdminDemo::config" title="Configuration" translate="title" module="MageWare_AdminDemo" sortOrder="10" parent="MageWare_AdminDemo::admindemo" action="adminhtml/system_config/edit/section/mageware_admindemo" resource="MageWare_AdminDemo::config" />
+    </menu>
+</config>
