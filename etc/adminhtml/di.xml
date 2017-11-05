@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Backend\Block\System\Account\Edit\Form"
+                type="MageWare\AdminDemo\Block\Backend\System\Account\Edit\Form" />
+    <preference for="Magento\Backend\Model\Url"
+                type="MageWare\AdminDemo\Model\Backend\Url" />
+    <type name="Magento\User\Model\User">
+        <plugin name="adminDemo" type="MageWare\AdminDemo\Model\Plugin\User" sortOrder="999" />
+    </type>
+</config>

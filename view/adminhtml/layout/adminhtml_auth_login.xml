@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="login.content">
+            <block class="MageWare\AdminDemo\Block\Backend\Login" name="admin.login" template="MageWare_AdminDemo::admin/login.phtml">
+                <container name="form.additional.info" label="Form Additional Info"/>
+                <container name="form.buttons" label="Form Buttons">
+                    <block class="Magento\Backend\Block\Template" name="adminhtml_auth_login_buttons" template="Magento_Backend::admin/login_buttons.phtml"/>
+                </container>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
